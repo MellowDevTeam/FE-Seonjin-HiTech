@@ -16,8 +16,16 @@ const MainPage2 = ({ page }) => {
         className={`absolute z-10 flex flex-col items-center text-center transition-all duration-[3500ms] ease-in-out ${
           page === 1 ? 'translate-y-0 opacity-100' : 'translate-y-40 opacity-0'
         }`}>
-        <span className="text-3xl text-white">page2</span>
-        <span className="mt-2 text-7xl font-bold text-white">Page2</span>
+        <div className="md:w-96">
+          <Image
+            src="/images/mainBanner/main_02_item_01.png"
+            alt="배전반"
+            width={400}
+            height={400}
+            className="z-1"
+            priority
+          />
+        </div>
       </div>
     </div>
   )
