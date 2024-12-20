@@ -4,11 +4,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Noto Sans KR"', 'sans-serif'] // Noto Sans KR 설정
+        sans: ['"Noto Sans KR"', 'sans-serif']
       },
-      borderRadius: {
-        '4xl': '2rem'
+      backgroundImage: {
+        about: "url('/images/about/about_01.png')"
       },
+
       keyframes: {
         reveal: {
           '0%': { transform: 'translateY(100%)' },

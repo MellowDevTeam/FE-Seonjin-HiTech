@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useSwiper } from '@/hooks/useSwiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
@@ -21,6 +21,10 @@ const MainPage1 = () => {
       setIsPaused(!isPaused) // 상태 업데이트
     }
   }
+
+  useEffect(() => {
+    setActiveIndex(0)
+  }, [])
 
   return (
     <>
