@@ -13,7 +13,7 @@ const Nav = () => {
       ref={navRef}
       className="h-15 sticky left-0 top-0 z-50 flex w-full items-center justify-between bg-white px-5 py-3">
       <Logo
-        size="m"
+        size="l"
         link
       />
       <nav className="flex items-center gap-10">

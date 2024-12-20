@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useState } from 'react'
 import { useSwiper } from '@/hooks/useSwiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -44,10 +45,12 @@ const MainPage1 = () => {
                 className={`relative flex h-full w-full items-center justify-center transition-transform duration-[4000ms] ${
                   activeIndex === index ? 'scale-110' : 'scale-100'
                 }`}>
-                <img
+                <Image
                   src={item.image}
                   alt={item.alt}
-                  className="h-full w-auto w-full object-cover"
+                  className="h-full w-auto object-cover"
+                  layout="fill"
+                  priority={true}
                 />
 
                 {/* Title and Subtitle */}
