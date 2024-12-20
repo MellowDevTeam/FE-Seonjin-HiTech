@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Noto Sans KR"', 'sans-serif'] // Noto Sans KR 설정
+      },
       borderRadius: {
         '4xl': '2rem'
       },
